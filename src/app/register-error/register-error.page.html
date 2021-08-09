@@ -1,0 +1,56 @@
+<ion-header>
+
+  <div class="lionsclubs">
+    <img src="assets/lions-icon.jpg" alt="--lions-icon--">
+    <span>
+       Lions Clubs International 
+    </span>
+  </div>
+
+  <div class="page-heading"><span> Register</span></div>
+</ion-header>
+
+<ion-content [fullscreen]="input_text == '' ? false : true">
+
+  <div class="mycontainer">
+    <ion-text  color="dark">
+      <h1> We could not identify you </h1>
+    </ion-text>
+    <form (ngSubmit)='btnclicked()'>
+    
+      <ion-label position="stacked">FirstName</ion-label>
+      <ion-input name="input1" [(ngModel)]="input_text1"></ion-input>
+    
+    
+    
+      <ion-label position="stacked">LastName</ion-label>
+      <ion-input name="input2" [(ngModel)]="input_text2"></ion-input>
+    
+    
+      <ion-label position="stacked">Member ID / Person ID</ion-label>
+      <ion-input name="input3" required="true" inputmode="tel" [(ngModel)]="input_text3"></ion-input>
+
+      <ion-textarea> We need a little more information about you to confirm your identity.<br>Please locate your club below or select Continue.
+      </ion-textarea>
+      
+
+      <ion-searchbar placeholder="Find Club "></ion-searchbar>
+
+    
+    <br>
+    <ion-button expand="block" type="submit">
+      Continue
+    </ion-button>
+    </form>
+    <br>
+    <ion-item *ngIf="form_submitted == true"></ion-item>
+    
+    <ion-textarea> <ion-icon name="person-outline"></ion-icon> Need assistance? Contact Support</ion-textarea>
+  
+  </div>
+  <div class="tagline" style="margin-top: auto;text-align: center;">
+    <span style="font-size: 12px;color: lightgray;">@2020 Lions Clubs International. All rights reserved
+
+    </span>
+  </div>
+</ion-content>

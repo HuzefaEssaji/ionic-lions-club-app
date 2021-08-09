@@ -1,0 +1,83 @@
+#container strong {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  
+  #container p {
+    font-size: 16px;
+    line-height: 22px;
+  
+    color: #8c8c8c;
+  
+    margin: 0;
+  }
+  
+  #container a {
+    text-decoration: none;
+  }
+  
+  
+  
+  ion-title{
+  
+    color:red;
+  }
+  
+  .lionsclubs{
+    background-color: rgb(21, 21, 96) !important;
+    color: white;
+    padding-top:15px !important;
+    padding-bottom: 5px;
+    font-size: small;
+    font-weight: 700 ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+  }
+  
+  img{
+    height:35px;
+  }
+  
+  .mycontainer{
+  
+    margin:0px 30px;
+  }
+  
+  .page-heading{
+    padding: 10px;
+    color: white;
+    font-weight: 700 !important;
+    text-align: center;
+    background: rgb(36,62,133);
+    background: linear-gradient(90deg, rgba(36,62,133,1) 0%, rgba(130,71,151,1) 100%); 
+    
+  }
+  
+  ion-label{
+  
+  
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  h1{
+    margin-bottom: 40px;
+    font-size: 25px;
+    font-weight: 600;
+  }
+  
+  ion-input{
+    border:1px solid lightgray;
+    border-radius:5px;
+    margin-bottom: 20px;
+  }
+  
+  ion-button{
+  
+    --background: rgb(36,62,133);
+  }

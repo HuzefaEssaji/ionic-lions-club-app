@@ -1,0 +1,62 @@
+<ion-header>
+
+  <div class="lionsclubs">
+    <img src="assets/lions-icon.jpg" alt="--lions-icon--">
+    <span>
+      Lions Clubs International 
+    </span>
+  </div>
+
+  <div class="page-heading"><span> Register</span></div>
+</ion-header>
+
+<ion-content [fullscreen]="input_text == '' ? false : true">
+
+  <div class="mycontainer">
+    <ion-text  color="dark">
+      <h1>Register </h1>
+    </ion-text>
+    <form (ngSubmit)='btnclicked()'>
+    
+      <ion-label position="stacked">FirstName</ion-label>
+      <ion-input name="input1" [(ngModel)]="input_text1"></ion-input>
+    
+    
+    
+      <ion-label position="stacked">LastName</ion-label>
+      <ion-input name="input2" [(ngModel)]="input_text2"></ion-input>
+    
+    
+      <ion-label position="stacked">Member ID / Person ID</ion-label>
+      <ion-input name="input3" required="true" inputmode="tel" [(ngModel)]="input_text3"></ion-input>
+
+      <ion-label position="stacked">Club Name</ion-label>
+      <ion-input name="input4" required="true"  [(ngModel)]="input_text4"></ion-input>
+
+      <ion-label position="stacked">Mobile</ion-label>
+      <ion-input name="input5" required="true" inputmode="tel" [(ngModel)]="input_text5"></ion-input>
+
+      <ion-label position="stacked">Captcha</ion-label>
+      <ion-input name="input6" required="true" [(ngModel)]="input_text6"></ion-input>
+    
+    <br>
+    <ion-button [routerLink] = "['/register-error']" expand="block" type="submit">
+      Continue
+    </ion-button>
+    </form>
+    <br>
+    <ion-item *ngIf="form_submitted == true"></ion-item>
+    
+    <div class="tagline" style="margin-top: auto;text-align: center;">
+      <span style="font-size: 12px;color: lightgray;">@2020 Lions Clubs International. All rights reserved
+  
+      </span>
+    </div>
+  </div>
+
+
+
+
+
+
+</ion-content>

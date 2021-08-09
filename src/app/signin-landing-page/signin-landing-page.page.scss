@@ -1,0 +1,49 @@
+ion-header::after{
+    background: none !important;
+}
+.lionsclubs{
+    background-color: rgb(21, 21, 96) !important;
+    color: white;
+    padding-top:15px !important;
+    padding-bottom: 5px;
+    font-size: small;
+    font-weight: 700 ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.page-heading{
+    padding: 10px;
+    color: white;
+    font-weight: 700 ;
+    text-align: center;
+    background: rgb(36,62,133);
+    background: linear-gradient(90deg, rgba(36,62,133,1) 0%, rgba(130,71,151,1) 100%); 
+    
+}
+.main-content{
+    display: grid;
+    place-items:center;
+    height: 100%;
+    margin:0px 30px;
+   
+}
+.mylion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.mylion-text{
+    font-size:35px;
+}
+.button-group{
+    width: 100%;
+}
+ion-button{
+    --background: #0f4ca2 !important;
+}
+img{
+    height: 35px;
+}
